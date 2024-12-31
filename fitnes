@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fitnes vodič - Smršajte i dovedite telo do savršenstva uz vežbe i ishranu.">
+    <title>Fitnes vodič</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #ff6b6b;
+        }
+        .book-image {
+            text-align: center;
+        }
+        .book-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .order-form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6b6b;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #ff5252;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitnes vodič</h1>
+        <p>Smršajte i dovedite telo do savršenstva uz vežbe i ishranu.</p>
+    </header>
+    <div class="container">
+        <div class="book-image">
+            <img src="book-cover-placeholder.jpg" alt="Fitnes vodič - Naslovna stranica">
+        </div>
+        <h2>Naručite odmah</h2>
+        <p>Popunite formu ispod i krenite na put ka savršenom telu!</p>
+        <form class="order-form" action="/process-order" method="POST">
+            <div class="form-group">
+                <label for="name">Ime i prezime:</label>
+                <input type="text" id="name" name="name" placeholder="Vaše ime" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Vaš email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Adresa za dostavu:</label>
+                <input type="text" id="address" name="address" placeholder="Vaša adresa" required>
+            </div>
+            <button type="submit" class="btn">Naručite sada</button>
+        </form>
+    </div>
+</body>
+</html>
